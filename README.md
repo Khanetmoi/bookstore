@@ -2,11 +2,9 @@
 
 
 <!-- TABLE OF CONTENTS -->
-PROJECT DESCRIPTION -->
 
 # 📖 [Bookstore]
 
-> Describe your project in 1 or 2 sentences.
 
 **[Bookstore]**  is an application that allows a user to:
 
