@@ -103,6 +103,7 @@ npm start
 ## 🔭 Future Features 
 
   * Use Redux in React components.
+  * connect to API
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
