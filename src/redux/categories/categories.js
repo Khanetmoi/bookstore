@@ -1,8 +1,6 @@
 const STATUS = 'bookstore/categories/statusChecked';
 
-
-const initialState = []
-
+const initialState = [];
 
 export default function categoriesReducer(state = initialState, action) {
   switch (action.type) {

@@ -6,7 +6,7 @@ const initialState = [];
 export default function booksReducer(state = initialState, action) {
   switch (action.type) {
     case ADD:
-      return [ ...state, action.payload ];
+      return [...state, action.payload];
     case REMOVE:
       return state.items.filter((item) => item.id !== action.id);
     default:
