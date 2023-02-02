@@ -1,20 +1,19 @@
 const STATUS = 'bookstore/categories/statusChecked';
 
-
 const initialState = {
-    categories: [],
+  categories: [],
 };
 
-export default booksReducer = (state = 0, action) => {
-    switch (action.type) {
-      case STATUS:
-        return "under construction";
+export default function categoriesReducer(state = initialState, action) {
+  switch (action.type) {
+    case STATUS:
+      return 'under construction';
 
-      default:
-        return state;
-    }
-  };
+    default:
+      return state;
+  }
+}
 
-  export const statusChecked = ()=>({
-    type: STATUS,
-  })
+export const statusChecked = () => ({
+  type: STATUS,
+});
