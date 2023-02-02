@@ -18,3 +18,11 @@ export default booksReducer = (state = 0, action) => {
     }
   };
 
+  export const addBook = ()=>({
+    type: ADD,
+  })
+
+  export const removeBook = ()=>({
+    type: REMOVE,
+  })
+
