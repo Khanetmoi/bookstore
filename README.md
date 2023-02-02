@@ -102,7 +102,7 @@ npm start
 
 ## 🔭 Future Features 
 
-  * Single Page App - Add redux
+  * Use Redux in React components.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
