@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Books from './components/books/Books';
 import Category from './components/Category/Category';
-// import { Router } from 'react-router-dom'
+
 import Nav from './components/Nav';
 
 const App = () => (
