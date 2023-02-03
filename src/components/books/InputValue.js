@@ -2,17 +2,18 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../../redux/books/books';
+import './books.css';
 
 const InputValue = () => {
   const [state, setState] = useState({
     title: '',
     author: '',
-    category: 'action',
+    category: 'Fictional',
   });
 
   const dispatch = useDispatch();
 
-  const eventHandler = (e) => {
+  const handleChange = (e) => {
     setState({
       ...state,
       [e.target.name]: e.target.value,
@@ -27,8 +28,8 @@ const InputValue = () => {
         addBook({
           title,
           author,
-          category,
           item_id: uuidv4(),
+          category,
         }),
       );
     }
@@ -37,13 +38,29 @@ const InputValue = () => {
   };
 
   return (
-    <div>
-      <h2>Add new Book</h2>
-      <div>
-        <input type="text" name="title" value={state.title} onChange={eventHandler} placeholder="Book title" required />
-        <input type="text" name="author" value={state.author} onChange={eventHandler} placeholder="author" required />
-        <button type="submit" onClick={handleSubmit}>Add book</button>
-      </div>
+    <div className="input">
+      <h1>ADD NEW BOOK</h1>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="title"
+          placeholder="Book title..."
+          value={state.title}
+          required
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          name="author"
+          placeholder="Author..."
+          value={state.author}
+          required
+          onChange={handleChange}
+        />
+        <button className="addBtn" type="submit">
+          ADD BOOK
+        </button>
+      </form>
     </div>
   );
 };

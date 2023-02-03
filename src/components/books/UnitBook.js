@@ -8,20 +8,23 @@ const UnitBook = ({
 }) => {
   const dispatch = useDispatch();
 
-  const bookDelete = () => dispatch(removeBook(id));
+  const deleteBook = () => dispatch(removeBook(id));
+
   return (
-    <div>
-      <small>action</small>
+    <article className="bookContainer">
+      <small>Fictional</small>
       <h2>{title}</h2>
-      <small>{author}</small>
-      <div className="flex">
-        <button type="submit">comments</button>
-        <button type="submit" onClick={bookDelete}>Remove</button>
+      <p>{author}</p>
+      <div className="callContainer">
+        <button type="submit">Comments</button>
+        <button type="submit" onClick={deleteBook}>Remove</button>
         <button type="submit">Edit</button>
       </div>
-    </div>
+    </article>
   );
 };
+
+export default UnitBook;
 
 UnitBook.defaultProps = {
   title: PropTypes.string,
@@ -30,10 +33,7 @@ UnitBook.defaultProps = {
 };
 
 UnitBook.propTypes = {
-  title: 'hello',
-  author: 'Van',
-  id: 'PropTypes.string',
-
+  title: PropTypes.string,
+  author: PropTypes.string,
+  id: PropTypes.string,
 };
-
-export default UnitBook;
