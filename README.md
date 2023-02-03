@@ -100,7 +100,7 @@ npm start
 
 ## 🔭 Future Features 
 
-  * connect to API
+  * add styling
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
