@@ -4,14 +4,14 @@ import { useDispatch } from 'react-redux';
 import { removeBook } from '../../redux/books/books';
 
 const UnitBook = ({
-  title, author, id, category,
+  title, author, id,
 }) => {
   const dispatch = useDispatch();
 
   const bookDelete = () => dispatch(removeBook(id));
   return (
     <div>
-      <small>{category}</small>
+      <small>action</small>
       <h2>{title}</h2>
       <small>{author}</small>
       <div className="flex">
@@ -26,15 +26,13 @@ const UnitBook = ({
 UnitBook.defaultProps = {
   title: PropTypes.string,
   author: PropTypes.string,
-  category: PropTypes.string,
   id: PropTypes.string,
 };
 
 UnitBook.propTypes = {
-  category: PropTypes.string,
-  title: PropTypes.string,
-  author: PropTypes.string,
-  id: PropTypes.string,
+  title: 'hello',
+  author: 'Van',
+  id: 'PropTypes.string',
 
 };
 

@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../../redux/books/books';
 
 const InputValue = () => {
   const [state, setState] = useState({
     title: '',
     author: '',
+    category: 'action',
   });
 
   const dispatch = useDispatch();
@@ -19,7 +21,17 @@ const InputValue = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addBook(state.title, state.author));
+    const { title, author, category } = state;
+    if (title.length > 0 && author.length > 0) {
+      dispatch(
+        addBook({
+          title,
+          author,
+          category,
+          item_id: uuidv4(),
+        }),
+      );
+    }
     state.title = '';
     state.author = '';
   };
