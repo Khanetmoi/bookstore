@@ -1,8 +1,8 @@
 import { v4 as uuidv4 } from 'uuid';
-
+import { createAsyncThunk } from '@reduxjs/toolkit';
 const ADD = 'bookstore/books/addBook';
 const REMOVE = 'bookstore/books/removeBook';
-const FECTH = 'bookstore/books/fechBooks';
+const FETCH = 'bookstore/books/fechBooks';
 
 const Api = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/qRq5MNlV4Ck1eZaDEPnz';
 
@@ -15,8 +15,8 @@ export default function booksReducer(state = initialState, action) {
       return action.payload;
 
     case `${REMOVE}/fulfilled`:
-      return
-         state.filter((book) => book.id !== action.payload);
+      return state.filter((book) => book.id !== action.payload);
+
     case `${FETCH}/fulfilled`: 
       return Object.keys(action.payload).map((key)=>{
         const {title, author, category} = action.payload[key][0];
@@ -34,18 +34,29 @@ export default function booksReducer(state = initialState, action) {
   }
 }
 
-export const addBook = (title, author) => ({
-  type: ADD,
-  payload: {
-    title,
-    author,
-    id: uuidv4(),
-  },
+export const addBook = createAsyncThunk(ADD, async(book) => {
+  await fetch(Api, {
+    method: 'POST',
+    body: JSON.stringify(book),
+    headers: {
+      'Content-type': 'application/json',
+    }
+  })
+  
 });
 
-export const removeBook = (id) => ({
-  type: REMOVE,
-  payload: {
-    id,
-  },
-});
+
+export const removeBook = createAsyncThunk(REMOVE, async(id)=>{
+  await fetch(`${Api}/${id}`, {
+    method: 'DELETE',
+    headers: {
+      'Content-type': 'aplication/json',
+    }
+  })
+})
+
+export const fetchBook = createAsyncThunk(FETCH, async()=>{
+  const response = await fetch(Api);
+  const data = await response.json();
+  return data;
+})
