@@ -1,17 +1,20 @@
 .booklistContainer {
-  margin-top: 3rem;
+  background-color: #fafafa;
+  padding-top: 3rem;
+  margin: 3rem 4rem;
 }
 
 .bookContainer {
   display: grid;
   grid-template-columns: 50% 25% 15%;
-  background: #fffcfc;
+  background: white;
   list-style: none;
   margin-bottom: 1.2rem;
   margin-left: 5%;
   margin-right: 5%;
   padding: 1rem;
-  box-shadow: 20px 20px 30px 20px #e6e1e1;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
 
 .bookContent > small {
@@ -25,7 +28,7 @@
 
 .bookContent p {
   margin-top: 2px;
-  color: blue;
+  color: #6a9fcd;
 }
 
 .callContainer {
@@ -36,7 +39,9 @@
 .callContainer > button {
   padding: 0.6rem;
   border: none;
-  color: blue;
+  color: #7cc6f0;
+  border-right: 0.6px solid gray;
+  background-color: transparent;
 }
 
 .progressContainer {
@@ -95,6 +100,14 @@
   border-radius: 0.2rem;
 }
 
+.progressBtn,
+.addBtn {
+  height: 50px;
+  background-color: #0290ff;
+  border: none;
+  color: white;
+}
+
 .input {
   margin: 2rem;
   padding: 2rem;
@@ -109,6 +122,9 @@ form {
   grid-template-columns: 1fr 0.5fr 0.2fr;
   gap: 1rem;
   width: 80%;
+  height: 50px;
+  padding: 20px 0;
+  background-color: #f0f0f0;
 }
 
 input {
