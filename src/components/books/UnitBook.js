@@ -12,13 +12,31 @@ const UnitBook = ({
 
   return (
     <article className="bookContainer">
-      <small>Fictional</small>
-      <h2>{title}</h2>
-      <p>{author}</p>
-      <div className="callContainer">
-        <button type="submit">Comments</button>
-        <button type="submit" onClick={deleteBook}>Remove</button>
-        <button type="submit">Edit</button>
+      <div className="bookContent">
+        <small>Fictional</small>
+        <h2>{title}</h2>
+        <p>{author}</p>
+        <div className="callContainer">
+          <button type="submit">Comments</button>
+          <button type="submit" onClick={deleteBook}>
+            Remove
+          </button>
+          <button type="submit">Edit</button>
+        </div>
+      </div>
+      <div className="progressContainer">
+        <div className="circle" />
+        <div className="percentage">
+          <h1>98%</h1>
+          <p>Completed</p>
+        </div>
+      </div>
+      <div className="updateContainer">
+        <p className="currentChapter">CURRENT CHAPTER</p>
+        <p>Chapter 17</p>
+        <button type="submit" className="progressBtn">
+          UPDATE PROGRESS
+        </button>
       </div>
     </article>
   );

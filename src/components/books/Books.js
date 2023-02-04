@@ -12,7 +12,7 @@ const Books = () => {
 
   const addedBooks = useSelector((state) => state.books);
   return (
-    <div>
+    <div className="booklistContainer">
       {addedBooks.map((book) => (
         <UnitBook
           key={book.item_id}
