@@ -1,17 +1,22 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { statusChecked } from '../../redux/categories/categories';
+import { checkStatus } from '../../redux/categories/categories';
+import './categories.css';
 
 const Category = () => {
   const dispatch = useDispatch();
-  const statusChecker = useSelector((state) => state.categories);
+  const categoriesStatus = useSelector((state) => state.categories);
+
   const handleSubmit = () => {
-    dispatch(statusChecked());
+    dispatch(checkStatus());
   };
+
   return (
     <div>
-      <button type="submit" onClick={handleSubmit}>Check status</button>
-      <h3>{statusChecker}</h3>
+      <button className="categories__btn" type="button" onClick={handleSubmit}>
+        Check Status
+      </button>
+      <h3>{categoriesStatus}</h3>
     </div>
   );
 };
