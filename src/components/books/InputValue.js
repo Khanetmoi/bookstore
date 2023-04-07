@@ -5,7 +5,7 @@ const InputValue = () => (
     <h2>Add new Book</h2>
     <div>
       <input type="text" placeholder="Book title" />
-      <input type="text" placeholder="Author" />
+      <input type="text" placeholder="Category" />
       <button type="submit">Add book</button>
     </div>
   </div>
