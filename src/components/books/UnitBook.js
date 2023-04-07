@@ -27,15 +27,3 @@ UnitBook.propTypes = {
 };
 
 export default UnitBook;
-
-UnitBook.defaultProps = {
-  title: PropTypes.string,
-  author: PropTypes.string,
-  id: PropTypes.string,
-};
-
-UnitBook.propTypes = {
-  title: PropTypes.string,
-  author: PropTypes.string,
-  id: PropTypes.string,
-};
