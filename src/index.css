@@ -25,3 +25,46 @@ code {
     'Courier New',
     monospace;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.2rem;
+  box-shadow: 1px 1px 1px rgb(218, 214, 214);
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0290ff;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  margin-right: 50%;
+}
+
+.navItem {
+  text-decoration: none;
+  font-size: 1.1rem;
+  right: 50%;
+  color: #000;
+}
+
+.navItem:hover,
+.navItem:focus {
+  color: gray;
+}
+
+.login {
+  position: absolute;
+  right: 8%;
+  font-size: 1.2rem;
+  color: rgb(51, 182, 226);
+  padding: 0.8rem;
+  border: 1px solid #999;
+  border-radius: 50%;
+}
