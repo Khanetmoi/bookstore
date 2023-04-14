@@ -8,13 +8,13 @@ const Books = () => {
       id: 1,
       category: 'action',
       title: 'Titanic',
-      author: 'Winfred',
+      author: 'Khan',
     },
     {
       id: 2,
       category: 'action',
       title: 'Titanic',
-      author: 'Winnie',
+      author: 'Inayat',
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ const Books = () => {
       id: 4,
       category: 'action',
       title: 'Titan',
-      author: 'Winfred',
+      author: 'Van',
     },
   ]);
   return (
