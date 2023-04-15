@@ -18,9 +18,6 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Bookstore]
-
-
 # 📖 [bookstore] <a name="about-project"></a>
 
 The Bookstore is a website that allows the user to
