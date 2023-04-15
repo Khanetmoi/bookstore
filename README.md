@@ -2,11 +2,28 @@
 
 
 <!-- TABLE OF CONTENTS -->
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Deployment](#deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
 # 📖 [Bookstore]
 
 
-**[Bookstore]**  is an application that allows a user to:
+# 📖 [bookstore] <a name="about-project"></a>  is an application that allows a user to:
 
     Display a list of books
     Add a book.
@@ -15,6 +32,9 @@
 
 
 ## 🛠 Built With <a name="built-with"></a>
+
+ - css
+ -react js
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -35,7 +55,7 @@
 
 <!-- Features -->
 
-### Key Features 
+### Key Features <a name="key-features"></a> 
 
 A react logo
 
@@ -43,7 +63,7 @@ A react logo
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo 
+## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](coming soon)
 
@@ -51,7 +71,7 @@ A react logo
 
 <!-- GETTING STARTED -->
 
-## 💻 Getting Started 
+## 💻 Getting Started <a name="getting-started"></a> 
 
 To get a local copy up and running follow these simple example steps.
 ## Prerequisites
@@ -64,11 +84,11 @@ To get a local copy up and running follow these simple example steps.
 1. Clone the repo in your local machine:
 
 ```bash
-git clone git clone https://github.com/khanetmoi/math-magician-app
+git clone git https://github.com/Khanetmoi/bookstore.git
 ```
 2. Open terminal and cd into project and install the dependencies
 ```bash
-cd Math-Magician
+cd bookstore
 npm install
 ```
 
@@ -98,7 +118,7 @@ npm start
 
 <!-- FUTURE FEATURES -->
 
-## 🔭 Future Features 
+## 🔭 Future Features <a name="future-features"></a>
 
   * Use Redux in React components.
   * connect to API
@@ -107,25 +127,24 @@ npm start
 
 <!-- CONTRIBUTING -->
 
-## 🤝 Contributing 
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Khanetmoi/math-magician-app/issues).
+Feel free to check the [issues page](https://github.com/Khanetmoi/bookstore/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
 
-## ⭐️ Show your support 
+## ⭐️ Show your support <a name="support"></a>
 
   * Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments 
+## 🙏 Acknowledgments <a name="acknowledgements"></a> 
 
   * Hat tip to anyone whose code was used
   * Inspiration
