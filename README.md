@@ -55,7 +55,9 @@
 
 ### Key Features <a name="key-features"></a> 
 
-A react logo
+    * Add Book
+    * Remove Book
+    * Attractive UI
 
 
 
@@ -112,7 +114,8 @@ npm start
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-  * n/a
+  * Better UI Experience
+  * Reduce Time & Space Complexity
  
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
