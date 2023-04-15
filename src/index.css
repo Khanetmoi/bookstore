@@ -32,6 +32,13 @@ code {
   padding: 2.2rem;
   box-shadow: 1px 1px 1px rgb(218, 214, 214);
   align-items: center;
+  margin-left: 5rem;
+}
+
+.header :nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -39,12 +46,14 @@ code {
   font-size: 2rem;
   font-weight: 600;
   color: #0290ff;
+  width: 14rem;
+  margin-right: 2rem;
 }
 
 nav {
   display: flex;
+  align-items: center;
   gap: 2rem;
-  margin-right: 50%;
 }
 
 .navItem {
@@ -67,4 +76,17 @@ nav {
   padding: 0.8rem;
   border: 1px solid #999;
   border-radius: 50%;
+}
+
+.icon {
+  color: #0290ff;
+  font-size: 44px;
+  margin-inline: auto;
+  margin-block: auto;
+}
+
+.Icircle {
+  border-radius: 50%;
+  border: 0.2px solid gray;
+  margin-right: 6rem;
 }

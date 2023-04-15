@@ -39,6 +39,7 @@ const InputValue = () => {
 
   return (
     <div className="input">
+      <hr />
       <h1>ADD NEW BOOK</h1>
       <form onSubmit={handleSubmit}>
         <input
