@@ -6,8 +6,8 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
+  - [Tech Stack](#tech-stack)
+  - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -21,11 +21,14 @@
 # 📖 [Bookstore]
 
 
-# 📖 [bookstore] <a name="about-project"></a>  is an application that allows a user to:
+# 📖 [bookstore] <a name="about-project"></a>
 
-    Display a list of books
-    Add a book.
-    Remove a selected book.
+The Bookstore is a website that allows the user to
+
+   * Display a list of books
+   * Add a book
+   * Remove a selected book
+
 
 
 
@@ -97,8 +100,6 @@ npm start
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Inayat-khan**
 
