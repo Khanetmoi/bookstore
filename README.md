@@ -120,8 +120,8 @@ npm start
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-  * Use Redux in React components.
   * connect to API
+  * styling
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
