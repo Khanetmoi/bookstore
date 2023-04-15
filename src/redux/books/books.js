@@ -2,32 +2,25 @@ import { v4 as uuidv4 } from 'uuid';
 
 const ADD = 'bookstore/books/addBook';
 const REMOVE = 'bookstore/books/removeBook';
-
 const initialState = {
   books: [
     {
       id: uuidv4(),
-      category: 'action',
-      title: 'Titanic',
-      author: 'Winfred',
+      title: 'The Great Gatsby',
+      author: 'John Smith',
+      category: 'Fiction',
     },
     {
       id: uuidv4(),
-      category: 'action',
-      title: 'Titanic',
-      author: 'Winnie',
+      title: 'Anna Karenina',
+      author: 'Leo Tolstoy',
+      category: 'Fiction',
     },
     {
       id: uuidv4(),
-      category: 'action',
-      title: 'tanic',
-      author: 'Winfred',
-    },
-    {
-      id: uuidv4(),
-      category: 'action',
-      title: 'Titan',
-      author: 'Winfred',
+      title: 'The Selfish Gene',
+      author: 'Richard Dawkins',
+      category: 'Nonfiction',
     },
   ],
 };
