@@ -1,8 +1,7 @@
-/* eslint-disable camelcase */
 import { createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
-const Api = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/3NpzSS6TCHlgPC9vqAsu/books';
-
+const Api = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/fTVe6hSKCBLfTOyQqdDN/books';
 // Actions
 const ADD = 'bookstore/books/addBook';
 const REMOVE = 'bookstore/books/removeBook';
@@ -35,15 +34,12 @@ export default function booksReducer(state = initialState, action) {
 }
 
 export const fetchBooks = createAsyncThunk(GET_BOOKS, async () => {
-  const response = await fetch(Api);
-  const data = await response.json();
-  return data;
+  const response = await axios.get(Api);
+  return response.data;
 });
 
 export const addBook = createAsyncThunk(ADD, async (book) => {
-  await fetch(Api, {
-    method: 'POST',
-    body: JSON.stringify(book),
+  await axios.post(Api, book, {
     headers: {
       'Content-type': 'application/json',
     },
@@ -51,8 +47,7 @@ export const addBook = createAsyncThunk(ADD, async (book) => {
 });
 
 export const removeBook = createAsyncThunk(REMOVE, async (id) => {
-  await fetch(`${Api}/${id}`, {
-    method: 'DELETE',
+  await axios.delete(`${Api}/${id}`, {
     headers: {
       'Content-type': 'application/json',
     },
